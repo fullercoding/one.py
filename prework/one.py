@@ -34,12 +34,15 @@ print(max_num_in_list([500,5000,111,44,27,10000,1000001]))
 # The return should be boolean Type (true/false).
 
 #!!!!!STUCK on line 37, come back, figure out division issue!!!!!
-def is_leap_year(a_year):
-    if a_year / 4 and !=/ 100 or a_year / 400:
-        return True
-    else:
-        return False
-print(is_leap_year(2014)) 
+def is_leap_year():
+    print(2012 % 4)
+    if 2014 % 4 == 0:
+        print (True)
+    if 2014 % 100 != 0:
+        print (False)
+    elif 2014 % 400 == 0:
+        print (False)
+print(is_leap_year()) 
 
 # Write a function to check to see if all numbers in list are consecutive numbers. 
 # For example, 
